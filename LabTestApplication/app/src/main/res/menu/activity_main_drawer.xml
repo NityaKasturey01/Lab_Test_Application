@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Bookings"
+            android:icon="@drawable/field_icon"
+            android:title="My Bookings" />
+        <item
+            android:id="@+id/nav_Reports"
+            android:icon="@drawable/report_icon"
+            android:title="My Reports" />
+        <item
+            android:id="@+id/nav_editProfile"
+            android:icon="@drawable/ic_edit_1"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:title="Logout" />
+    </group>
+</menu>

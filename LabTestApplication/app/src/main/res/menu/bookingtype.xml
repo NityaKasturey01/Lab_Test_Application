@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bookings"
+        android:title="Upcoming Bookings"
+        android:enabled="true"
+        />
+    <item android:id="@+id/preBookings"
+        android:title="Previous Bookings"/>
+
+</menu>

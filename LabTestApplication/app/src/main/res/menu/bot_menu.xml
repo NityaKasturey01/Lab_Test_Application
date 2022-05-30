@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homeBot"
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"/>
+    <item android:id="@+id/testBot"
+        android:title="Lab Tests"
+        android:icon="@drawable/chemistry_test_tube"/>
+    <item android:id="@+id/exploreBot"
+        android:title="Explore"
+        android:icon="@drawable/ic_search"/>
+    <item android:id="@+id/profileBot"
+        android:title="Profile"
+        android:icon="@drawable/ic_register_username"/>
+
+</menu>

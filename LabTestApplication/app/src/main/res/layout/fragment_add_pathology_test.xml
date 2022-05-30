@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AddPathologyTest">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pathologyabc"
+        android:alpha="0.1"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/testNameNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Enter Test Name"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textColorHint="#393838"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/parametersNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="Parameters"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:textColorHint="#393838"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/fieldNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:hint="Test Field"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:textColorHint="#393838"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_margin="20dp">
+            <TextView
+                android:id="@+id/colTypeNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Collection Type"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/homeNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="HOME"
+                android:layout_marginLeft="20dp"/>
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/labNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LAB"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/descriptionNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Test Description"
+            android:inputType="text"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textColorHint="#393838"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/prereqNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Test Pre Requisit"
+            android:inputType="text"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textColorHint="#393838"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ageNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="Max Age"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:textColorHint="#393838"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/reportNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:hint="Reports Time"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:textColorHint="#393838"/>
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/costNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Test Price"
+            android:inputType="number"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textColorHint="#393838"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Upload Image"
+                android:paddingLeft="35dp"
+                android:textSize="15sp"
+                android:textColor="#393838"
+                android:layout_margin="10dp"
+                android:gravity="right"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageNew"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/pathology_icon"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addBtnNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_700"/>
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

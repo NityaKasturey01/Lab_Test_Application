@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookTestAct">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Test - Fill Your Details"
+            android:background="@drawable/homepageimage"
+            android:backgroundTint="@color/teal_200"
+            android:padding="35dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="TEST NAME"
+                android:textColor="@color/teal_700"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/testNameBook"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Test"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:layout_marginBottom="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="SPICIFY MEMBERS"
+                android:textColor="@color/teal_700"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/membersAdded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Members"
+                android:padding="12dp"
+                android:drawablePadding="15dp"
+                android:background="@drawable/edittextfinal"
+                android:drawableEnd="@android:drawable/arrow_down_float"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="DATE"
+                    android:textColor="@color/teal_700"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="2dp"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/dateUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType=""
+                    android:hint="Date"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="8dp"
+                    android:drawableLeft="@drawable/ic_calender"
+                    android:drawablePadding="9dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="TIME"
+                    android:textColor="@color/teal_700"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="2dp"/>
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinnerTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:scrollbarSize="4dp"
+                    android:fadeScrollbars="true"
+                    android:scrollbarFadeDuration="1000"
+                    android:scrollIndicators="right"
+                    android:spinnerMode="dropdown"
+                    android:scrollbarStyle="insideOverlay"
+                    android:verticalScrollbarPosition="right"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="CHOOSE COLLECTION TYPE"
+                android:textColor="@color/teal_700"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp"/>
+            <RadioGroup
+                android:id="@+id/collectionradio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/homeRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOME"
+                    android:checked="true"/>
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/labRadio"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LAB" />
+            </RadioGroup>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/homeLayout"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="ADDRESS"
+                    android:textColor="@color/teal_700"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="2dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/pincodeUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:drawablePadding="9dp"
+                        android:hint="Enter City Pincode"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="8dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/cityStateUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:inputType="text"
+                    android:hint="Your City and State"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="8dp"
+                    android:drawablePadding="9dp"
+                    android:layout_marginBottom="10dp"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/areaUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:inputType="textLongMessage"
+                    android:hint="Enter Area/Locality"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="8dp"
+                    android:drawablePadding="9dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="CONTACT OF SAMPLER"
+                    android:textColor="@color/teal_700"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="2dp"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/contactSampler"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:inputType="phone"
+                    android:hint="Enter Contact Number"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:drawableLeft="@drawable/ic_register_phone"
+                    android:drawablePadding="9dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/labLayout"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="45dp">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="ADDRESS"
+                        android:textColor="@color/teal_700"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="2dp"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/areaLab"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="ADDRESS"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:layout_marginBottom="2dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="45dp">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="CONTACT OF SAMPLER"
+                        android:textColor="@color/teal_700"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="2dp"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/contactLab"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="CONTACT"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:layout_marginBottom="2dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@drawable/edittext"
+            android:backgroundTint="#97EC35">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Total Price"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/priceTest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Rs 1000"
+                android:padding="4dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:background="@drawable/edittext"
+                android:backgroundTint="@color/white"/>
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/confirmBookBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:text="Confirm Booking"
+            android:textColor="@color/white"
+            android:background="@drawable/edittext"
+            android:backgroundTint="@color/teal_700"
+            android:layout_marginBottom="6dp"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.PathologyReports">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:background="#FC5E5D5D">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchReports"
+                android:layout_width="279dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="5dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/searchbar"
+                android:backgroundTint="@color/white"/>
+
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="5dp"
+            android:id="@+id/recylerViewReports"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="202dp"
+            tools:layout_editor_absoluteY="118dp"
+            android:scrollbarFadeDuration="1000"
+            android:scrollbarSize="5dp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollIndicators="right"
+            android:scrollbars="vertical"
+            android:fitsSystemWindows="true"/>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.LabTests"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:background="#FC5E5D5D">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchTest"
+                android:layout_width="279dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="5dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/searchbar"
+                android:backgroundTint="@color/white"/>
+
+            <LinearLayout
+                android:id="@+id/lay1"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:background="#FD5E5D5D"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="2"
+                android:layout_marginBottom="14dp">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/checkHome"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:text="Home Collection"
+                        android:checked="true"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/checkLab"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:text="Lab Collection"
+                        android:checked="true"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/appimageform" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+   <!--     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="28dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:drawableLeft="@drawable/ic_add_to_cart"
+                android:backgroundTint="@color/teal_700"
+                android:paddingLeft="18dp"
+                android:textColor="@color/white"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="245dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp"
+                android:text="Filter"
+                android:background="@drawable/searchbar"
+                android:textColor="@color/teal_700"/>
+        </LinearLayout>-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="5dp"
+            android:id="@+id/recylerViewTests"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="202dp"
+            tools:layout_editor_absoluteY="118dp"
+            android:scrollbarFadeDuration="1000"
+            android:scrollbarSize="5dp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollIndicators="right"
+            android:scrollbars="vertical"
+            android:fitsSystemWindows="true"/>
+
+    </LinearLayout>
+
+</FrameLayout>

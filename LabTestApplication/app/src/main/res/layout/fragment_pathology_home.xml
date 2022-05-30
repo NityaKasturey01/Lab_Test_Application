@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.PathologyHome">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/pathologyabc"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <TextView
+            android:id="@+id/dnameHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pathology Discover Name"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#3A3838"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/fullnameHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pathology Full Name"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textColor="#494646"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/pathologyContactHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:drawableStart="@drawable/ic_register_phone"
+            android:layout_gravity="center"
+            android:text="+91 90874563719"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/pathologyAddressHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:drawableStart="@drawable/ic_home"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            android:text="Address"
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:background="@drawable/edittextfinal"
+            android:backgroundTint="#5BDDDADA"
+            android:layout_marginTop="10dp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tests You Provide"
+                android:layout_marginBottom="10dp"
+                android:textColor="#0D53C8"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/recylerTestsPathology"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                tools:layout_editor_absoluteX="202dp"
+                tools:layout_editor_absoluteY="118dp"
+                android:scrollbarFadeDuration="1000"
+                android:scrollbarSize="5dp"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollIndicators="right"
+                android:scrollbars="vertical"
+                android:fitsSystemWindows="true"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addPathologyTests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="+ ADD A TEST"
+                android:background="@drawable/adduser"
+                android:backgroundTint="#05A1E6"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

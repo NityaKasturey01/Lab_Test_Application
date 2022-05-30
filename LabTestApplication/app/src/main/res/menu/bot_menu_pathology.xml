@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homePathology"
+        android:title="Pathology Home"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"/>
+    <item android:id="@+id/bookPathology"
+        android:title="User Bookings"
+        android:icon="@drawable/chemistry_test_tube"/>
+    <item android:id="@+id/reportsPathology"
+        android:title="User Reports"
+        android:icon="@drawable/report_icon"/>
+
+</menu>
